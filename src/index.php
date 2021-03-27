@@ -102,20 +102,77 @@ require('sql-ex.php');
         echo $statusNum['count(status)'];
 
         new_exercise(26);
+        echo $contact2['COUNT(contactLastName)'] 
+        .' - '. $contact2['COUNT(lastName)'];
 
         new_exercise(27);
+        echo $buyPrice['productCode'];
 
         new_exercise(28);
+        echo $profit['productCode'];
 
         new_exercise(29);
+        echo $profit1['difference'];
 
         new_exercise(30);
+        echo $productCode['productCode'];
 
         new_exercise(31);
+        echo $prise['Count(productCode)'];
 
         new_exercise(32);
+        echo $productCode1['productCode'];
 
         new_exercise(33);
+        echo $quantityOrd['total'];
+
+        new_exercise(34);
+        echo $checkNum['checkNumber'];
+
+        new_exercise(35);
+        echo $checkNum1['customerNumber'];
+
+        new_exercise(36);
+        echo $pay['count(*)'];
+
+        new_exercise(37);
+        echo $productQty['count(*)'];
+
+        new_exercise(38);
+        echo $total1['country'];
+
+        new_exercise(39);
+        echo $total2['total'];
+
+        new_exercise(40);
+        echo $total3['total'];
+
+        new_exercise(41);
+        echo $avg['round(avg(innerTable.total))'];
+
+        new_exercise(42);
+        echo $sum['round(sum(quantityOrdered * priceEach))'];
+
+        new_exercise(43);
+        echo $sum1['round(sum(quantityOrdered * priceEach))'];
+
+        new_exercise(44);
+        echo $totalYear['year'];
+
+        new_exercise(45);
+        echo $totalYear1['total'];
+
+        new_exercise(46);
+        // echo $orderName['total'];
+
+        new_exercise(47);
+
+        new_exercise(48);
+        //echo $customerOrder['count(*)'];
+
+        new_exercise(49);
+
+        new_exercise(50);
 
 
             // foreach($customers as $key => $customer){
