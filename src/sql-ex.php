@@ -1,20 +1,5 @@
 <?php
 
-
-// try {
-    // $results = $db->prepare("SELECT productName, productCode FROM products");
-    // $results = $db->prepare("SELECT COUNT(customerNumber) AS  FROM customers");// How many customers do we have?
-    // $results =$db->prepare("SELECT contactFirstName, contactLastName FROM customers");  What is the customer number of Mary Young?
-    // $results =$db->prepare("SELECT addressLine1, addressLine2, postalCode, city, country FROM customers"); What is the customer number of the person living at Magazinweg 7, Frankfurt 60528?
-    // $results = $db->prepare("SELECT lastName, email FROM employees");
-    // $results =$db->prepare("SELECT productCode, productScale, ProductName FROM products WHERE ProductLine = 'trucks and buses' ");
-//     $results=$db->prepare("SELECT lastName, email FROM employees WHERE lastName like 't%' ");
-//     $results->execute();
-// } catch(Exception $e) {
-//     echo $e->getMessage();
-//     exit;
-// }
-
 //:EX:1
 try {
     $results = $db->prepare("SELECT COUNT(contactLastName) FROM customers");
@@ -25,8 +10,6 @@ try {
 }
 // $ex1 = $ex1->fetchAll(PDO::FETCH_ASSOC);
 $results = $results->fetch();
-
-
 //EX:2
 try {
     $customers =$db->prepare("SELECT customerNumber FROM customers where contactFirstName= 'Mary' AND contactLastName='Young'");
@@ -36,8 +19,6 @@ try {
     exit;
 }
 $customers = $customers->fetch();
-
-
 //EX:3
 try {
     $address =$db->prepare("SELECT customerNumber from customers where addressLine1 = 'Magazinweg 7'");
@@ -66,7 +47,6 @@ try {
     exit;
 }
 $lastName1 = $lastName1->fetch();
-
 //EX:6
 try {
     $code =$db->prepare("SELECT productCode FROM products 
@@ -174,7 +154,6 @@ try {
     exit;
 }
 $creditLimit = $creditLimit ->fetch();
-
 //EX:16
 try {
     $contact1 =$db->prepare("SELECT 

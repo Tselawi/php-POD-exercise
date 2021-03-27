@@ -9,3 +9,5 @@ You need to use the `classicmodels` database to run the queries.
 * Dbeaver
 * Php myadmin
 
+## This the like for the training:
+[THE FORM OF THE QUESTION IN SQL](https://docs.google.com/forms/d/e/1FAIpQLSdnDx3ktIOnfmQRC5DdZhk2F49w3h1TYrq9lMBkhdgxjZcHKg/viewform)
